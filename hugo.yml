@@ -1,0 +1,154 @@
+baseURL: https://8lackfish.github.io/
+locale: vi-VN
+defaultContentLanguage: vi
+title: "d's blog"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+permalinks:
+  page:
+    posts: /blog/:filename
+  section:
+    posts: /blog/
+
+taxonomies:
+  tag: tags
+
+pagination:
+  pagerSize: 3
+
+module:
+  imports:
+    - path: github.com/adityatelange/hugo-PaperMod
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+menu:
+  main:
+    - identifier: search
+      name: Tìm kiếm
+      url: /search/
+      weight: 1
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 2
+    - identifier: archives
+      name: Lưu trữ
+      url: /archives/
+      weight: 3
+
+markup:
+  highlight:
+    noClasses: false
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          block:
+            - - '\['
+              - '\]'
+            - - '$$'
+              - '$$'
+          inline:
+            - - '\('
+              - '\)'
+            - - '$'
+              - '$'
+params:
+  env: production
+  keywords:
+    - blog
+    - math
+    - physics
+    - science
+    - computer science
+    - toán học
+    - vật lý
+    - khoa học
+    - khoa học máy tính
+
+  DateFormat: "2 January, 2006"
+  defaultTheme: dark
+  disableThemeToggle: false
+  assets:
+    favicon: "/img/favicon.svg"
+
+  ShowReadingTime: false
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  ShowDescriptionInList: true
+
+  hideFooter: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hideMeta: false
+  hideSummary: false
+  ShowToc: true
+  TocOpen: false
+
+  label:
+    text: "d's blog"
+
+  homeInfoParams:
+    Title: "Xin chào, mình là D."
+    Content: |
+      Trong quá trình học tập và làm việc, đây là [Không gian blog](/blog/) để mình
+      chia sẻ những ghi chép thường là xoay quanh các chủ đề liên quan đến
+      Khoa học cơ bản, Khoa học máy tính và Công nghệ thông tin.
+
+      Nội dung ghi chép là các bài viết được tổng hợp từ các mẫu ghi chú cá nhân
+      và chỉ được thực hiện trong những lúc nhàn rỗi. Vì vậy,
+      hình thức trình bày sẽ thường xuyên trông kém chỉn chu và hầu hết
+      nội dung chỉ mang giá trị tham khảo, được cải thiện dần theo thời gian,
+      song có thể vẫn có nhiều thiếu sót hoặc chưa chính xác.
+
+  socialIcons:
+    - name: x
+      url: https://x.com/1019abcdwxyz
+    - name: github
+      url: https://github.com/8lackfish
+
+  cover:
+    hidden: true
+    hiddenInList: true
+    hiddenInSingle: true
+
+  editPost:
+    URL: https://github.com/8lackfish/8lackfish.github.io/edit/main/content
+    Text: Đề xuất cải thiện
+    appendFilePath: true
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10
+    keys:
+      - title
+      - permalink
+      - summary
+      - content

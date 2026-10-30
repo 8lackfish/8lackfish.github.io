@@ -1,0 +1,31 @@
+:root {
+  --title-font: ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --accent-color: #9d6fc4;
+  --dark-post-link-color: #b794f4
+}
+
+html[data-theme="light"] {
+  --accent-color: #1a1a1a;
+}
+
+.logo a {
+  font-family: var(--title-font);
+  color: var(--accent-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--title-font);
+}
+
+html[data-theme="dark"] .post-content a,
+html[data-theme="dark"] .entry-content a {
+  color: var(--dark-post-link-color);
+}
+
+.header-nav {
+  max-width: calc(var(--nav-width) + var(--gap) * 2 - 17rem);
+}
+
+.main {
+  max-width: calc(var(--main-width) + var(--gap) * 2 - 4rem);
+}
