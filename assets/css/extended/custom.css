@@ -1,7 +1,7 @@
 :root {
   --title-font: ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
   --accent-color: #9d6fc4;
-  --dark-post-link-color: #b794f4
+  --dark-post-link-color: #b794f4;
 }
 
 html[data-theme="light"] {
