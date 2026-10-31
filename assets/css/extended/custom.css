@@ -33,3 +33,11 @@ html[data-theme="dark"] .entry-content a {
 .post-entry {
   background: var(--theme);
 }
+
+body:not(:has(main .post-single)) .header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+}
