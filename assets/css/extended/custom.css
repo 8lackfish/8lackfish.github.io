@@ -29,3 +29,7 @@ html[data-theme="dark"] .entry-content a {
 .main {
   max-width: calc(var(--main-width) + var(--gap) * 2 - 4rem);
 }
+
+.post-entry {
+  background: var(--theme);
+}
