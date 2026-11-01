@@ -152,3 +152,4 @@ params:
       - permalink
       - summary
       - content
+  ShowPageNums: true
