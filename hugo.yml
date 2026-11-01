@@ -123,11 +123,7 @@ params:
       nội dung chỉ mang giá trị tham khảo, được cải thiện dần theo thời gian,
       song có thể vẫn có nhiều thiếu sót hoặc chưa chính xác.
 
-  socialIcons:
-    - name: x
-      url: https://x.com/1019abcdwxyz
-    - name: github
-      url: https://github.com/8lackfish
+      [github](https://github.com/8lackfish) · [x](https://x.com/1019abcdwxyz)
 
   cover:
     hidden: true
