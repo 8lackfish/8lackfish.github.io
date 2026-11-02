@@ -38,7 +38,7 @@ thì hiển nhiên tồn tại các số nguyên dương $e$ và $f$ là **các 
 
 Theo đó, một mặt ta có được biểu thức $a-b=(e-f)G$, mặc khác hệ số $e-f$ trong biểu thức vừa có cũng không thể phân tích thành bất kì thừa số chung nào với $f$, vì vậy
 
-$$\boxed{gcd(a-b,b)=G=gcd(a,b), \lbrace a,b \rbrace \in \mathbb{Z}^{+}, a \gt b.}$$
+$$ gcd(a-b,b)=G=gcd(a,b), \lbrace a,b \rbrace \in \mathbb{Z}^{+}, a \gt b. $$
 
 **Hạn chế của thuật toán**: khi hai số có khoảng cách xa trên trục số, phải thực hiện rất nhiều số phép trừ cho đến khi đạt được cặp số bằng nhau. Chẳng hạn trường hợp với $1000$ và $7$ là cặp số đầu vào, độ hiệu quả của thuật toán về mặt thời gian được cho là khá tệ so với biến thể sau đây, biến thể sau đây thường được ưa thích hơn khi nói đến **Thuật toán Euclid**.
 
@@ -78,7 +78,7 @@ Tổng kết cho tất cả điều này:
 
 Theo đó
 
-$$\boxed{gcd(a\ \mathbf{rem}\ b, b)=gcd(b\ \mathbf{rem}\ a, a)=G=gcd(a,b), \lbrace a, b\rbrace \in \mathbb{Z}^{+}.}$$
+$$ gcd(a\ \mathbf{rem}\ b, b)=gcd(b\ \mathbf{rem}\ a, a)=G=gcd(a,b), \lbrace a, b\rbrace \in \mathbb{Z}^{+}. $$
 
 ### Tính toán *gcd* với các số nguyên
 
@@ -108,7 +108,7 @@ và
 
 hiển nhiên:
 
-$$ \boxed{gcd(-a,-b)=gcd(-a,b)=gcd(a,-b)=G=gcd(a,b).} $$
+$$ gcd(-a,-b)=gcd(-a,b)=gcd(a,-b)=G=gcd(a,b). $$
 
 Do đó, thuật toán Euclid, tính $gcd$ của hai số nguyên dương, đủ để tính $gcd$ của hai số nguyên khác 0 tuỳ ý.
 
@@ -142,7 +142,7 @@ $$\Rightarrow gcd(a,b,c)=max\lbrace D_{gcd(a,b)} \cap D_c \rbrace=gcd(gcd(a,b),c
 
 Vì vậy trong trường hợp này:
 
-$$\boxed{gcd(a,b,c)=gcd(gcd(a,b),c)=gcd(a,gcd(b,c))=gcd(gcd(a,c),b).}$$
+$$ gcd(a,b,c)=gcd(gcd(a,b),c)=gcd(a,gcd(b,c))=gcd(gcd(a,c),b). $$
 
 Một góc nhìn tổng quát:
 
