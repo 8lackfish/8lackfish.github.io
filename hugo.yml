@@ -111,8 +111,10 @@ params:
     text: "d's blog"
 
   homeInfoParams:
-    Title: "Xin chào, mình là D."
+    Title: ""
     Content: |
+      Chào, mình là D.
+
       Trong quá trình học tập và làm việc, đây là [Không gian blog](/blog/) để mình
       chia sẻ những ghi chép thường là xoay quanh các chủ đề liên quan đến
       Khoa học cơ bản, Khoa học máy tính và Công nghệ thông tin.
