@@ -32,6 +32,33 @@ html[data-theme="dark"] .entry-content a {
 
 .post-entry {
   background: var(--theme);
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.post-entry:hover,
+.post-entry:focus-within {
+  transform: none;
+  border-color: color-mix(in srgb, var(--dark-post-link-color) 50%, transparent);
+}
+
+html[data-theme="dark"] .post-entry:hover .entry-header h2 {
+  color: var(--dark-post-link-color);
+}
+
+html[data-theme="light"] .post-entry:hover .entry-header h2 {
+  text-decoration: underline;
+}
+
+html[data-theme="light"] .post-entry {
+  background: var(--code-bg);
+  border-color: color-mix(in srgb, var(--secondary) 50%, transparent);
+}
+
+html[data-theme="light"] .post-entry:hover,
+html[data-theme="light"] .post-entry:focus-within {
+  border-color: var(--secondary);
 }
 
 body:not(:has(main .post-single)) .header {
