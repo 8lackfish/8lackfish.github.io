@@ -3,6 +3,10 @@ locale: vi-VN
 defaultContentLanguage: vi
 title: "d's blog"
 
+services:
+  googleAnalytics:
+    id: G-RVMX0Z517F
+
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
